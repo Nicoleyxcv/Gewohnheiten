@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Habit Tracker</title>
+
+    <!-- CSS-Datei -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Hauptbereich -->
+    <main class="container">
+
+        <!-- Kopfbereich -->
+        <header class="header">
+            <h1>My Habit Tracker</h1>
+            <p>Small steps. Big changes.</p>
+        </header>
+
+        <!-- Neuen Habit hinzufügen -->
+        <section class="add-habit">
+
+            <h2>Neuen Habit erstellen</h2>
+
+            <div class="habit-form">
+
+                <input
+                    type="text"
+                    id="habitName"
+                    placeholder="Name deiner Gewohnheit..."
+                >
+
+                <input
+                    type="color"
+                    id="habitColor"
+                    value="#39d98a"
+                    title="Farbe auswählen"
+                >
+
+                <button id="addHabitButton">
+                    + Hinzufügen
+                </button>
+
+            </div>
+
+        </section>
+
+        
+<!-- Tägliche Checkliste -->
+<section class="daily-checklist">
+
+    <div class="daily-header">
+        <h2>Meine Aufgaben für heute</h2>
+        <span id="todayDate"></span>
+    </div>
+
+    <div id="todayChecklist" class="today-checklist">
+    </div>
+
+</section>
+
+
+        <!-- Übersicht -->
+        <section class="tracker">
+
+            <div class="tracker-header">
+                <h2>Meine Gewohnheiten</h2>
+
+                <div class="view-options">
+                    <button id="yearView" class="active">
+                        Jahr
+                    </button>
+
+                    <button id="monthView">
+                        Monat
+                    </button>
+                </div>
+            </div>
+
+            <!-- Hier werden später die Habits angezeigt -->
+            <div id="habitList" class="habit-list">
+
+                <div class="empty-state">
+                    <p>Noch keine Habits vorhanden.</p>
+                    <p>Erstelle deine erste Gewohnheit!</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Fußbereich -->
+        <footer class="footer">
+            <p>My Habit Tracker · Built by me</p>
+        </footer>
+
+    </main>
+
+    <!-- JavaScript-Datei -->
+    <script src="script.js"></script>
+
+</body>
+</html>
